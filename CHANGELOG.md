@@ -5,6 +5,42 @@ All notable changes to the VantageUEFI-AI extension will be documented in this f
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-02-22
+
+### 🎨 Visual Branding Enhancement
+
+#### ✨ New Logo Integration
+- **Brand Visual Identity**: Added VantageUEFI-AI logo to README.md
+- **Professional Header**: Centered logo with badges and professional presentation
+- **Enhanced README**: Complete visual overhaul with modern GitHub-style formatting
+- **Badge Integration**: MIT License, VS Code Extension, and Ollama badges
+
+#### 🔗 Repository Information Update
+- **Correct Repository**: Updated to https://github.com/leoliao1980/vantage-uefi-ai
+- **Issue Tracking**: Proper GitHub Issues link configuration
+- **Documentation Links**: Updated all repository references across documentation
+- **Package Configuration**: Fixed repository URLs in package.json for proper packaging
+
+#### 📚 Documentation Enhancement
+- **Complete README**: Comprehensive documentation with installation, usage, and development guides
+- **Professional Structure**: Organized sections with clear navigation and visual hierarchy
+- **Development Setup**: Detailed building and contribution guidelines
+- **Support Information**: Complete contact and support channels
+
+#### 🎯 Market Preparation
+- **Professional Presentation**: Enterprise-ready documentation and branding
+- **Installation Instructions**: Both Marketplace and VSIX installation methods
+- **Configuration Guide**: Complete settings and model recommendations
+- **Roadmap Transparency**: Clear future development plans and feature requests
+
+#### 🔧 Technical Updates
+- **Repository Links**: Fixed all GitHub repository references
+- **Package Metadata**: Corrected publisher and author information
+- **Documentation Consistency**: Ensured all links point to correct repository
+- **Version Synchronization**: Updated version numbers across all files
+
+---
+
 ## [0.2.0] - 2026-02-21
 
 ### 🎉 VantageUEFI-AI Rebranding Release
@@ -121,13 +157,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 1. Install Ollama: `curl -fsSL https://ollama.ai/install.sh | sh`
 2. Start Ollama: `ollama serve`
 3. Pull model: `ollama pull qwen2.5-coder:7b`
-4. Install extension from VS Code Marketplace
+4. Install extension from VS Code Marketplace or install from VSIX: `code --install-extension vantage-uefi-ai-0.2.0.vsix`
 
 ### Usage
 1. Open EDK II firmware file in VS Code
 2. Select code to analyze
 3. Right-click → "Analyze with VantageUEFI-AI"
 4. View professional firmware analysis in side panel
+
+### Repository
+- **Main Repository**: https://github.com/leoliao1980/vantage-uefi-ai
+- **Issues**: https://github.com/leoliao1980/vantage-uefi-ai/issues
+- **License**: MIT License
 
 ---
 
@@ -151,3 +192,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 **For detailed usage instructions and troubleshooting, see the [README.md](README.md).**
+
+### Repository Information
+- **GitHub**: https://github.com/leoliao1980/vantage-uefi-ai
+- **Author**: Hsien-Chung, Liao (Leo Liao)
+- **License**: MIT License
+- **Email**: hsienchung.liao@gmail.com

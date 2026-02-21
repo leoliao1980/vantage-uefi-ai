@@ -2,7 +2,7 @@
   "name": "vantage-uefi-ai",
   "displayName": "VantageUEFI-AI",
   "description": "Advanced AI-driven analysis for modern EDK II development. Enhances portability through LibraryClass reuse and silicon-agnostic design.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "leo-liao",
   "keywords": [
     "EDK II",
@@ -43,12 +43,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leo-liao/vantage-uefi-ai"
+    "url": "https://github.com/leoliao1980/vantage-uefi-ai"
   },
   "bugs": {
-    "url": "https://github.com/leo-liao/vantage-uefi-ai/issues"
+    "url": "https://github.com/leoliao1980/vantage-uefi-ai/issues"
   },
-  "homepage": "https://github.com/leo-liao/vantage-uefi-ai#readme",
+  "homepage": "https://github.com/leoliao1980/vantage-uefi-ai#readme",
   "contributes": {
     "configuration": {
       "title": "VantageUEFI-AI Settings",
