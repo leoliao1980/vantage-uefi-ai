@@ -1,0 +1,92 @@
+{
+  "name": "vantage-uefi-ai",
+  "displayName": "VantageUEFI-AI",
+  "description": "Advanced AI-driven analysis for modern EDK II development. Enhances portability through LibraryClass reuse and silicon-agnostic design.",
+  "version": "0.2.0",
+  "publisher": "leo-liao",
+  "keywords": [
+    "EDK II",
+    "UEFI",
+    "Firmware",
+    "BIOS",
+    "LibraryClass",
+    "MdePkg",
+    "MdeModulePkg",
+    "Silicon Agnostic",
+    "Project Mu",
+    "TianoCore",
+    "Ollama",
+    "Local AI",
+    "Privacy",
+    "Security",
+    "C",
+    "Embedded Systems",
+    "PCD",
+    "SafeString",
+    "DXE",
+    "PEI",
+    "SMM"
+  ],
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "AI",
+    "Linters"
+  ],
+  "main": "./out/extension.js",
+  "author": {
+    "name": "Hsien-Chung, Liao (Leo Liao)",
+    "email": "hsienchung.liao@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leo-liao/vantage-uefi-ai"
+  },
+  "bugs": {
+    "url": "https://github.com/leo-liao/vantage-uefi-ai/issues"
+  },
+  "homepage": "https://github.com/leo-liao/vantage-uefi-ai#readme",
+  "contributes": {
+    "configuration": {
+      "title": "VantageUEFI-AI Settings",
+      "properties": {
+        "vantageUefi.model": {
+          "type": "string",
+          "default": "qwen2.5-coder:7b",
+          "description": "Local Ollama model for EDK II analysis (recommended: qwen2.5-coder:7b)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "vantageUefi.analyze",
+        "title": "Analyze with VantageUEFI-AI"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "vantageUefi.analyze",
+          "group": "navigation",
+          "when": "resourceExtname =~ /\\.(c|cpp|h|hpp|py|bat|vfr|dsc|dec|fdf|uni|asl|s|inf)$/i || editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "18.x",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
